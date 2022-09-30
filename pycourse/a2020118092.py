@@ -67,7 +67,7 @@ class RestaurantMatcher(object):
         </html>"""
 
     # Define the contents of iframe1; search for the restaurants and display a
-    # list of them to choose from.
+    # list of them to choose from
     @cherrypy.expose
     def search(self, name=r'.', borough=r'.', street=r'.', zipcode=r'.'):
         cursor = db.restaurants.find(
